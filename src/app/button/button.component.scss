@@ -1,0 +1,13 @@
+:host /deep/ span.interactive-arrow {
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+:host .btn:hover /deep/ span.interactive-arrow {
+	&:before {
+	    width: 0px;
+	    opacity: 0;
+	}
+}

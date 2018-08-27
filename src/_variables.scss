@@ -1,0 +1,104 @@
+$font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 375px,
+  md: 768px,
+  lg: 1230px,
+);
+
+$container-max-widths: (
+  sm: 375px,
+  md: 768px,
+  lg: 1230px,
+);
+
+$input-btn-padding-y: 0.875rem;
+
+$btn-padding-y: calc(#{$input-btn-padding-y} - 1px);
+
+$border-width: 1px;
+
+$input-btn-border-width: $border-width;
+
+$btn-border-width: $input-btn-border-width + 1px;
+
+$btn-border-radius: 1.5781rem;
+
+$input-padding-x: 0;
+$input-box-shadow: 0;
+$font-size-base: 0.9375rem;
+$font-size-lg: $font-size-base * 1.2;
+$font-size-sm: $font-size-base * 0.8;
+$font-size-xs: 16px;
+$font-size-micro: 14px;
+
+$h1-font-size: $font-size-base * 2.4;
+$h2-font-size: $font-size-base * 1.6;
+$h3-font-size: $font-size-base * 1.4;
+
+$headings-font-weight: 700;
+
+$display1-size: 5.25rem;
+$display1-weight: inherit;
+$display2-weight: inherit;
+$lead-font-size: $font-size-base * 1.4;
+
+
+$gray-600: #7f7f7f;
+$transparent: rgba(255, 255, 255, 0);
+$black: #000;
+$primary: #77a45c;
+$secondary: $gray-600;
+$primary-hover: #f1d120;
+$primary-active: #d9bb18;
+
+$body-color: $black;
+
+$border-radius-sm: 0.2rem;
+$border-radius: 0.4rem;
+$border-radius-lg: 1.875rem;
+
+$line-height-small-text: 1.43;
+
+$input-bg: $transparent;
+
+
+$red: #f00;
+$blue: #27597c;
+$orange: #ff6000;
+$green: #00bf31;
+$aqua: #0eaec1;
+
+$theme-colors: ();
+$theme-colors: map-merge((
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "orange":     $orange,
+  "aqua": $aqua
+), $theme-colors);
+
+$white: #fff;
+
+$input-color: $white;
+$input-disabled-bg: $transparent;
+$link-color: $secondary;
+$input-border-radius: 0;
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge((
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3),
+  6: ($spacer * 4.5),
+  7: ($spacer * 6)
+), $spacers);
+$transition-base: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$modal-dialog-margin: 0px;
+
+$modal-transition: $transition-base;
+
+

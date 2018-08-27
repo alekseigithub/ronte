@@ -1,0 +1,7 @@
+
+
+<input *ngIf="!mask" class="form-control {{inputClass}}" type="{{type}}" name={{name}} id={{name}}
+	[readonly]="readonly" [required]="required" [(ngModel)]="value" placeholder="{{placeholder}}">
+
+<input *ngIf="mask" [textMask]="{mask: mask}" class="form-control {{inputClass}}" type="{{type}}"
+	name={{name}} id={{name}} [readonly]="readonly" [required]="required" [(ngModel)]="value" placeholder="{{placeholder}}">

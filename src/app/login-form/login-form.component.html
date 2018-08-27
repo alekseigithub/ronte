@@ -1,0 +1,23 @@
+<form class="login-form" #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+	<div class="form-field line-height-1">
+		<label class="text-secondary mb-0" for="{{selectId}}">
+			Country
+		</label>
+	</div>
+	<app-select class="form-field mb-4" (onIndexChange)="onIndexChange($event)" [name]="selectId" [items]="countriesListHTML" [value]="selectValue"></app-select>
+	<div class="form-field line-height-1">
+		<label class="text-secondary mb-0" for="{{telId}}">
+			Phone number
+		</label>
+	</div>
+	<div class="form-field">
+		<div class="row">
+			<div class="col-4">
+				<app-input [type]="'tel'" [name]="'tel-prefix-input'" [readonly]="true" [value]="countryCode"></app-input>
+			</div>
+			<div class="col-8">
+				<app-input [type]="'tel'" [mask] = "mask" [name]="telId" [(ngModel)]="loginPhone" [required]="true" [value]="loginPhone" ngDefaultControl></app-input>
+			</div>
+		</div>
+	</div>
+	<app-button class="form-field" [btnClass]="'w-100 btn_sign-in'"></app-button>

@@ -1,0 +1,15 @@
+
+
+<!-- <select class="select form-control" name={{name}} id={{name}} value="{{value}}" (change)="onChange($event)">
+	<option *ngFor="let item of items">{{item}}</option>
+</select> -->
+
+<div class="select {{activeClass}}" id={{name}} (click)="onClick($event)" #select__options>
+  <button type="button" class="select__value form-control" [innerHtml]="value">
+  </button>
+  <ul class="select__options list-unstyled">
+  	<li *ngFor="let item of items">
+  		<button class="select__option btn-reset w-100" type="button" [innerHtml]="item"></button>
+  	</li>
+  </ul>
+</div>

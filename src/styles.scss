@@ -1,0 +1,132 @@
+@import "/variables";
+@import "/vendor";
+
+input.form-control:-webkit-autofill,
+input.form-control:-webkit-autofill:hover,
+input.form-control:-webkit-autofill:focus input:-webkit-autofill,
+textarea.form-control:-webkit-autofill,
+textarea.form-control:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select.form-control:-webkit-autofill,
+select.form-control:-webkit-autofill:hover,
+select.form-control:-webkit-autofill:focus {
+    -webkit-text-fill-color: #fff;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+}
+
+input.form-control:-webkit-autofill,
+input.form-control:-webkit-autofill:hover,
+textarea.form-control:-webkit-autofill,
+select.form-control:-webkit-autofill,
+select.form-control:-webkit-autofill:hover {
+    -webkit-box-shadow: 0 0 0px 1000px $black inset;
+    -webkit-transition: $transition-base box-shadow, $transition-base border, background-color 5000s ease-in-out 0s;
+    -o-transition: $transition-base box-shadow, $transition-base border, background-color 5000s ease-in-out 0s;
+    transition: $transition-base box-shadow, $transition-base border, background-color 5000s ease-in-out 0s;
+
+}
+
+input.form-control:-webkit-autofill:focus input:-webkit-autofill,
+textarea.form-control:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select.form-control:-webkit-autofill:focus,
+input.form-control:-webkit-autofill:focus:hover {
+    -webkit-box-shadow: $input-focus-box-shadow, 0 0 0px 1000px $black inset;
+    -webkit-transition: $transition-base box-shadow, $transition-base border, background-color 5000s ease-in-out 0s;
+    -o-transition: $transition-base box-shadow, $transition-base border, background-color 5000s ease-in-out 0s;
+    transition: $transition-base box-shadow, $transition-base border, background-color 5000s ease-in-out 0s;
+}
+
+/* You can add global styles to this file, and also import other style files */
+.page {
+	color: $white;
+    background: $black url("/assets/images/bg-cat.jpg") center 0 no-repeat;
+}
+
+app-root, app-login, app-login-form, app-select, app-button {
+    display: block;
+}
+
+.mh-100vh {
+    min-height: 100vh;
+}
+
+.line-height-1 {
+    line-height: 1;
+}
+
+.btn {
+    appearance: none;
+    border-color: $primary;
+    color: $primary;
+    background-color: $transparent;
+
+    &:hover {
+        box-shadow: $input-btn-focus-box-shadow;
+    }
+}
+
+.form-control {
+    border: 1px solid $transparent;
+    border-bottom-color: $secondary;
+    width: 100%;
+    background-color: $transparent;
+
+    &:focus {
+        outline: none;
+        border-color: $secondary;
+    }
+
+    &::placeholder {
+      color: $secondary;
+      opacity: 0.5;
+    }
+
+    &[readonly] {
+        color: $secondary;
+        cursor: default;
+
+        &:focus {
+            box-shadow: none;
+            border-color: $transparent;
+            border-bottom-color: $secondary;
+        }
+    }
+}
+
+.btn-reset {
+    appearance: none;
+    border: 0;
+    padding: 0;
+    text-align: left;
+    background: none;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.icon {
+    display: inline-block;
+}
+
+.icon-ge {
+    width: 30px;
+    height: 30px;
+    background: url("assets/images/ger.png") center 2px;
+}
+
+.icon-ru {
+    width: 30px;
+    height: 30px;
+    background: url("assets/images/ger.png") center 2px;
+}
+
+.icon-us {
+    width: 30px;
+    height: 30px;
+    background: url("assets/images/ger.png") center 2px;
+}
+
+.rounded-50 {
+    border-radius: 50%;
+}

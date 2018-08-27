@@ -1,0 +1,18 @@
+@import "../../variables";
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+
+.form-field {
+	max-width: 300px;
+}
+
+:host /deep/ .btn_sign-in {
+	position: absolute;
+	left: 0;
+	bottom: map-get($spacers, 4);
+}
+
+
+.login-form {
+    padding-bottom: calc(3.1562rem + #{map-get($spacers, 4) * 2});
+}
